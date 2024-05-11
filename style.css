@@ -67,7 +67,7 @@ nav ul li a i {
     width: 100%;
     height: 500px;
     display: flex;
-    animation: slide 9s infinite;
+    animation: slide 15s infinite;
 }
 
 .slides img {
