@@ -8,7 +8,8 @@ body {
 header {
     background-color: #ffffff; /* Light background for the header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px; /* Padding around the navigation */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul {
