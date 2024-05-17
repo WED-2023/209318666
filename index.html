@@ -172,65 +172,57 @@
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>Contact Me</h1>
-</tr>
-<form class="main">
-<table cellpadding="2" cellspacing="2">
-<tr>
-<td><label>First Name :</label></td>
-<td><input type="text" class="txtClass" ></td>
-<td><label>Last Name :</label></td>
-<td><input type="text" class="txtClass" ></td>
-</tr>
-<tr>
-<td><label>Address</label></td>
-<td colspan="3"><input type="text" class="txtClassLong"></td>
-</tr>
-<tr>
-<td><label>E-mail</label></td>
-<td colspan="3"><input type="text" class="txtClassLong" ID="Text1" NAME="Text1" placeholder="email@example.com"></td>
-</tr>
-<tr>
-	
-      <td></td>  <textarea id="messageBox" placeholder="Message me"></textarea></td>
-	 <td> </td><select id="smileyDropdown" onchange="insertSmiley()">
-        <option value="">Emoji</option>
-	<option value="😊">😊 </option>
-        <option value="😄">😄 </option>
-        <option value="🤔">🤔 </option>
-        <option value="😉">😉</option>
-        <option value="😔">😔 </option>
-	<option value="🥲">🥲 </option>
-	<option value="🤣">🤣 </option>
-	<option value="😇">😇 </option>
-	<option value="🤪">🤪 </option>
-	<option value="🤩">🤩 </option>
-	<option value="🤓">🤓 </option>
-	<option value="😡">😡 </option>
-	<option value="🤯">🤯 </option>
-	<option value="👍">👍 </option>
-	<option value="🫶">🫶 </option>
-        </select>
-   </td>
-	</tr>
-<tr>
-<td><input type="submit" class="btnClass" value="Submit Form"></td>
-<td><input type="reset" class="btnClass" value="Reset Form"></td>
-</tr>
-</table>
-</form>
-
-<p>Call us: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-<p>Email us: <a href="mailto:dianaib@post.bgu.ac.il">dianaib@post.bgu.ac.il</a></p><br/>
-<br/>
-<br/>
-<br/>
+    <h1>Contact Me</h1>
+    <form class="main">
+        <table cellpadding="2" cellspacing="2">
+            <tr>
+                <td><label>First Name:</label></td>
+                <td><input type="text" class="txtClass"></td>
+                <td><label>Last Name:</label></td>
+                <td><input type="text" class="txtClass"></td>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td colspan="3"><input type="text" class="txtClassLong"></td>
+            </tr>
+            <tr>
+                <td><label>E-mail:</label></td>
+                <td colspan="3"><input type="email" class="txtClassLong" id="email" name="email" placeholder="email@example.com"></td>
+            </tr>
+            <tr>
+                <td><label>Message:</label></td>
+                <td colspan="3">
+                    <textarea id="messageBox" placeholder="Message me"></textarea>
+                    <select id="smileyDropdown" onchange="insertSmiley()">
+                        <option value="">Emoji</option>
+                        <option value="😊">😊</option>
+                        <option value="😄">😄</option>
+                        <option value="🤔">🤔</option>
+                        <option value="😉">😉</option>
+                        <option value="😔">😔</option>
+                        <option value="🥲">🥲</option>
+                        <option value="🤣">🤣</option>
+                        <option value="😇">😇</option>
+                        <option value="🤪">🤪</option>
+                        <option value="🤩">🤩</option>
+                        <option value="🤓">🤓</option>
+                        <option value="😡">😡</option>
+                        <option value="🤯">🤯</option>
+                        <option value="👍">👍</option>
+                        <option value="🫶">🫶</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btnClass" value="Submit Form"></td>
+                <td><input type="reset" class="btnClass" value="Reset Form"></td>
+            </tr>
+        </table>
+    </form>
+    <p>Call us: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    <p>Email us: <a href="mailto:dianaib@post.bgu.ac.il">dianaib@post.bgu.ac.il</a></p>
 </section>
+
 <script>
 function insertSmiley() {
     const textarea = document.getElementById('messageBox');
