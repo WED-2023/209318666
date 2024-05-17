@@ -47,13 +47,13 @@ nav ul li a {
 }
 
 main {
-    padding-top: 60px; /* Add padding to top of the main content to prevent it from being overlaid by the nav */
+    padding-top: 150px; /* Add padding to top of the main content to prevent it from being overlaid by the nav */
 }
 
 section {
     padding: 20px;
-    height: 600px; /* Example height */
-    border-bottom: 1px solid #ccc; /* Example styling */
+    height: 600px; 
+    border-bottom: 1px solid #ccc; 
 }
 #likeButton {
     background-color: #4CAF50; /* Green background */
