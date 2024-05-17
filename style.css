@@ -35,9 +35,7 @@ nav ul {
     text-align: center; /* Center the navigation items */
 }
 
-nav ul li {
-    display: inline; /* Display list items in a row */
-}
+
 
 nav ul li a {
     text-decoration: none;
