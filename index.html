@@ -193,7 +193,7 @@
         
                 <td colspan="3">
                     <textarea id="messageBox" placeholder="Message me"></textarea>
-                    <select id="smileyDropdown" onchange="insertSmiley()">
+                    <select id="smileyDropdown" onchange="insertSmiley()"  style="position: absolute; top: 10px; right: 10px;">
                         <option value="">Emoji</option>
                         <option value="😊">😊</option>
                         <option value="😄">😄</option>
@@ -227,15 +227,18 @@
 function insertSmiley() {
     const textarea = document.getElementById('messageBox');
     const smiley = document.getElementById('smileyDropdown').value;
-    if (!smiley) return; // Do nothing if the "Add Smiley" option is selected
+    if (!smiley) return; // If no emoji is selected, do nothing
 
     const cursorPos = textarea.selectionStart;
     const textBefore = textarea.value.substring(0, cursorPos);
     const textAfter = textarea.value.substring(cursorPos, textarea.value.length);
     
     textarea.value = textBefore + smiley + textAfter; // Insert the smiley
+    textarea.selectionStart = cursorPos + smiley.length; // Move the cursor after the emoji
+    textarea.selectionEnd = cursorPos + smiley.length;
     textarea.focus(); // Keep the focus on the textarea
 }
+
 </script>
 
 
