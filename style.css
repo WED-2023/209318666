@@ -46,9 +46,7 @@ nav ul li a {
     display: inline-block;
 }
 
-main {
-    padding-top: 150px; /* Add padding to top of the main content to prevent it from being overlaid by the nav */
-}
+
 
 section {
     padding: 20px;
