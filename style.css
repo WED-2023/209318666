@@ -119,7 +119,16 @@ textarea {
     padding-right: 50px; /* Make space for the dropdown */
     box-sizing: border-box;
     border-radius: 10px;
+    position: relative;  /* Ensure this is positioned */
+    z-index: 1;
 }
+#smileyDropdown {
+    position: absolute;
+    right: 10px;  /* Adjust according to your layout */
+    top: 10px;    /* Adjust to position inside the textarea on the top right */
+    z-index: 2;   /* Higher than textarea */
+}
+
 
 select {
     position: absolute;
