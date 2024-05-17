@@ -119,6 +119,9 @@ textarea {
     box-sizing: border-box;
     border-radius: 10px;
 }
+.container { 
+    overflow: visible; /* Allows dropdown to be visible outside the box */
+}
 
 select {
     position: absolute;
