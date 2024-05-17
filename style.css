@@ -48,11 +48,7 @@ nav ul li a {
 
 
 
-section {
-   
-    height: 600px; 
-    border-bottom: 1px solid #ccc; 
-}
+
 #likeButton {
     background-color: #4CAF50; /* Green background */
     color: white;
