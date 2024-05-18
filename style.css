@@ -125,17 +125,21 @@ textarea {
 .message-form textarea, .message-form select {
     position: relative; 
 }
-#messageBox {
-    width: calc(100% - 20px); /* Adjust width to prevent overflow */
-    padding-right: 50px; /* Space for the dropdown */
+textarea#messageBox {
+    width: 100%; /* Full width of the container */
+    background-color: white; /* Change background color */
+    color: black; /* Text color */
+    border: 1px solid #ccc; /* Add border for definition */
+    padding: 8px; /* Padding inside the text area */
 }
-#smileyDropdown {
+select#smileyDropdown {
     position: absolute;
     top: 5px; /* Adjust this to match your layout needs */
     right: 5px;
     background: transparent;
     border: 1px solid #ccc;
     color: white;
+     z-index: 10;
 }
 
 
@@ -185,4 +189,5 @@ textarea {
     padding: 8px;
     border: 1px solid #ccc; /* Subtle border */
     border-radius: 4px; /* Rounded corners */
+    margin-right: 10px;
 }
