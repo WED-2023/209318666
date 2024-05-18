@@ -128,6 +128,8 @@ textarea {
     width: 100%;         /* Ensures the textarea fills the container */
     height: 150px;       /* Specifies the height of the textarea */
     padding: 10px;
+    background-color: white;
+    color: black;
     padding-top: 30px;   /* Adds space at the top for the dropdown */
     box-sizing: border-box; /* Includes padding and border in the width and height */
 }
