@@ -191,9 +191,9 @@
             </tr>
             <tr>
         
-                <td colspan="4">
-                    <textarea id="messageBox" placeholder="Message me" style="width: 100%;"></textarea>
-                    <select id="smileyDropdown" onchange="insertSmiley()"  style="position: absolute; top: 10px; right: 10px;">
+        	<div class="message-container">
+                    <textarea id="messageBox" placeholder="Message me" ></textarea>
+                    <select id="smileyDropdown" onchange="insertSmiley()">
                         <option value="">Emoji</option>
                         <option value="😊">😊</option>
                         <option value="😄">😄</option>
@@ -211,6 +211,7 @@
                         <option value="👍">👍</option>
                         <option value="🫶">🫶</option>
                     </select>
+		</div>
 		</td>
             </tr>
             <tr>
@@ -224,18 +225,23 @@
 </section>
 
 <script>
-function insertSmiley() {
-    var textarea = document.getElementById('messageBox');
-    var smiley = document.getElementById('smileyDropdown').value;
-    if (!smiley) return;
+function insertEmoji() {
+    const textbox = document.getElementById('messageBox');
+    const emoji = document.getElementById('emojiDropdown').value;
+    if (!emoji) return;  // If no emoji is selected, do nothing
+
     // Insert emoji at the current cursor position
-    var startPos = textarea.selectionStart;
-    var endPos = textarea.selectionEnd;
-    textarea.value = textarea.value.substring(0, startPos) + smiley + textarea.value.substring(endPos, textarea.value.length);
-    textarea.selectionStart = startPos + smiley.length;
-    textarea.selectionEnd = startPos + smiley.length;
-    textarea.focus();
+    let cursorPos = textbox.selectionStart;
+    let textBefore = textbox.value.substring(0, cursorPos);
+    let textAfter = textbox.value.substring(cursorPos);
+    textbox.value = textBefore + emoji + textAfter;
+    textbox.focus();  // Brings focus back to the textarea
+
+    // Move cursor right after the inserted emoji
+    cursorPos += emoji.length;
+    textbox.selectionStart = textbox.selectionEnd = cursorPos;
 }
+
 
 </script>
 
