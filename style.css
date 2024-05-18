@@ -168,6 +168,6 @@ textarea:focus, select:focus {
 
 #emojiDropdown option {
     color: black; /* Attempt to explicitly set option text color to black */
-    background: white; /* Ensuring the background for options is white */
+    background: #333; /* Ensuring the background for options is white */
 }
 
