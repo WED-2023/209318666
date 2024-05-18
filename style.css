@@ -147,3 +147,17 @@ textarea:focus, select:focus {
     width: 100%;              /* Ensure it fills its container */
     box-sizing: border-box;   /* Include padding and border in the width calculation */
 }
+.message-container { /* The container holding the textarea */
+    position: relative;      /* Establish this container as the reference for positioning */
+    width: 100%;              /* Adjust width as needed */
+}
+
+#emojiDropdown {
+    position: absolute;      
+    top: 10px;                /* Position from the top of the container */
+    right: 10px;              /* Position from the right of the container */
+    background: transparent;  /* Optional: make the background transparent */
+    border: none;             /* Optional: remove border if not needed */
+    z-index: 10;              /* Ensure it appears above the textarea */
+}
+
