@@ -160,3 +160,19 @@ textarea:focus, select:focus {
     border: none;             /* Optional: remove border if not needed */
     z-index: 10;              /* Ensure it appears above the textarea */
 }
+
+
+.main-container {
+    background-color: white; /* White background for the content area */
+    width: 80%; /* Adjust width as needed, or use max-width for responsiveness */
+    margin: 20px auto; /* Center the container and add margin around it */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
+    overflow: hidden; /* Ensures no internal content can overflow */
+}
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%; /* Wider on smaller screens */
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}
