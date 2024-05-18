@@ -159,5 +159,10 @@ textarea:focus, select:focus {
     background: transparent;  /* Optional: make the background transparent */
     border: none;             /* Optional: remove border if not needed */
     z-index: 10;              /* Ensure it appears above the textarea */
+
+
+    color: black; /* Set text color to black */
+    background-color: white; /* Ensure background is white for contrast */
+    border: 1px solid #ccc;
 }
 
