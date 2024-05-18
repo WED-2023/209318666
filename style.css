@@ -119,8 +119,6 @@ textarea {
     padding-right: 50px; /* Make space for the dropdown */
     box-sizing: border-box;
     border-radius: 10px;
-    position: relative;  /* Ensure this is positioned */
-    z-index: 1;
 }
 .message-container {
     position: relative;  /* Establishes a positioning context */
@@ -150,9 +148,6 @@ select {
     background: transparent;
     border: 1px solid white;
     color: white;
-    z-index: 5;
-    display: block;
-    width: auto;
 }
 
 select option {
