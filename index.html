@@ -223,24 +223,18 @@
 </section>
 
 <script>
-function insertEmoji() {
-    const textbox = document.getElementById('messageBox');
-    const emoji = document.getElementById('emojiDropdown').value;
-    if (!emoji) return;  // If no emoji is selected, do nothing
+function insertSmiley() {
+    const textarea = document.getElementById('messageBox');
+    const smiley = document.getElementById('smileyDropdown').value;
+    if (!smiley) return; // Do nothing if the "Add Smiley" option is selected
 
-    // Insert emoji at the current cursor position
-    let cursorPos = textbox.selectionStart;
-    let textBefore = textbox.value.substring(0, cursorPos);
-    let textAfter = textbox.value.substring(cursorPos);
-    textbox.value = textBefore + emoji + textAfter;
-    textbox.focus();  // Brings focus back to the textarea
-
-    // Move cursor right after the inserted emoji
-    cursorPos += emoji.length;
-    textbox.selectionStart = textbox.selectionEnd = cursorPos;
+    const cursorPos = textarea.selectionStart;
+    const textBefore = textarea.value.substring(0, cursorPos);
+    const textAfter = textarea.value.substring(cursorPos, textarea.value.length);
+    
+    textarea.value = textBefore + smiley + textAfter; // Insert the smiley
+    textarea.focus(); // Keep the focus on the textarea
 }
-
-
 </script>
 
 
