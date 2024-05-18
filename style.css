@@ -159,15 +159,4 @@ textarea:focus, select:focus {
     background: transparent;  /* Optional: make the background transparent */
     border: none;             /* Optional: remove border if not needed */
     z-index: 10;              /* Ensure it appears above the textarea */
-
-
-    color: black; /* Set text color to black */
-    background-color: white; /* Ensure background is white for contrast */
-    border: 1px solid #ccc;
 }
-
-#emojiDropdown option {
-    color: black; /* Attempt to explicitly set option text color to black */
-    background: #333; /* Ensuring the background for options is white */
-}
-
