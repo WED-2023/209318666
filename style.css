@@ -122,24 +122,24 @@ textarea {
     position: relative;  /* Ensure this is positioned */
     z-index: 1;
 }
-.message-form textarea, .message-form select {
-    position: relative; 
+.message-container {
+    position: relative;  /* Establishes a positioning context */
+    margin: 20px;        /* Optional, for spacing around the container */
 }
-textarea#messageBox {
-    width: 100%; /* Full width of the container */
-    background-color: white; /* Change background color */
-    color: black; /* Text color */
-    border: 1px solid #ccc; /* Add border for definition */
-    padding: 8px; /* Padding inside the text area */
+#messageBox {
+    width: 100%;         /* Ensures the textarea fills the container */
+    height: 150px;       /* Specifies the height of the textarea */
+    padding: 10px;
+    padding-top: 30px;   /* Adds space at the top for the dropdown */
+    box-sizing: border-box; /* Includes padding and border in the width and height */
 }
-select#smileyDropdown {
+#emojiDropdown {
     position: absolute;
-    top: 5px; /* Adjust this to match your layout needs */
-    right: 5px;
+    top: 5px;            /* Positions the dropdown at the top inside the textarea */
+    right: 5px;          /* Positions the dropdown on the right inside the textarea */
+    border: none;
     background: transparent;
-    border: 1px solid #ccc;
-    color: white;
-     z-index: 10;
+    color: gray;         /* Styles the dropdown arrow */
 }
 
 
