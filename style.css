@@ -98,6 +98,7 @@ nav ul li a {
 }
 
 
+
 .message-form {
     position: relative;
     margin: auto;
@@ -119,6 +120,26 @@ textarea {
     box-sizing: border-box;
     border-radius: 10px;
 }
+.message-container {
+    position: relative;  /* Establishes a positioning context */
+    margin: 20px;        /* Optional, for spacing around the container */
+}
+#messageBox {
+    width: 100%;         /* Ensures the textarea fills the container */
+    height: 150px;       /* Specifies the height of the textarea */
+    padding: 10px;
+    padding-top: 30px;   /* Adds space at the top for the dropdown */
+    box-sizing: border-box; /* Includes padding and border in the width and height */
+}
+#emojiDropdown {
+    position: absolute;
+    top: 5px;            /* Positions the dropdown at the top inside the textarea */
+    right: 5px;          /* Positions the dropdown on the right inside the textarea */
+    border: none;
+    background: transparent;
+    color: gray;         /* Styles the dropdown arrow */
+}
+
 
 select {
     position: absolute;
@@ -137,4 +158,31 @@ select option {
 /* Additional styles for focus and hover states */
 textarea:focus, select:focus {
     outline: none;
+}
+.container { 
+    overflow: visible; /* Allows dropdown to be visible outside the box */
+}
+
+
+.section {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; /* Choose a light background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Soft shadow for depth */
+}
+
+.label, input, textarea, select {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px;
 }
