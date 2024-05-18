@@ -227,14 +227,11 @@
 function insertSmiley() {
     var textarea = document.getElementById('messageBox');
     var smiley = document.getElementById('smileyDropdown').value;
-    if (!smiley) return; // Exit if no emoji is selected
-
+    if (!smiley) return;
     // Insert emoji at the current cursor position
     var startPos = textarea.selectionStart;
     var endPos = textarea.selectionEnd;
-    textarea.value = textarea.value.substring(0, startPos) +
-                     smiley +
-                     textarea.value.substring(endPos, textarea.value.length);
+    textarea.value = textarea.value.substring(0, startPos) + smiley + textarea.value.substring(endPos, textarea.value.length);
     textarea.selectionStart = startPos + smiley.length;
     textarea.selectionEnd = startPos + smiley.length;
     textarea.focus();
