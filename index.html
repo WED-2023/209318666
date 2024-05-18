@@ -233,10 +233,8 @@ function insertSmiley() {
     const textBefore = textarea.value.substring(0, cursorPos);
     const textAfter = textarea.value.substring(cursorPos, textarea.value.length);
     
-    textarea.value = textBefore + smiley + textAfter; // Insert the smiley
-    textarea.selectionStart = cursorPos + smiley.length; // Move the cursor after the emoji
-    textarea.selectionEnd = cursorPos + smiley.length;
-    textarea.focus(); // Keep the focus on the textarea
+    textarea.value = textBefore + smiley + textAfter;
+    textarea.focus();
 }
 
 </script>
