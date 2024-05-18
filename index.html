@@ -225,15 +225,18 @@
 
 <script>
 function insertSmiley() {
-    const textarea = document.getElementById('messageBox');
-    const smiley = document.getElementById('smileyDropdown').value;
-    if (!smiley) return; // If no emoji is selected, do nothing
+    var textarea = document.getElementById('messageBox');
+    var smiley = document.getElementById('smileyDropdown').value;
+    if (!smiley) return; // Exit if no emoji is selected
 
-    const cursorPos = textarea.selectionStart;
-    const textBefore = textarea.value.substring(0, cursorPos);
-    const textAfter = textarea.value.substring(cursorPos, textarea.value.length);
-    
-    textarea.value = textBefore + smiley + textAfter;
+    // Insert emoji at the current cursor position
+    var startPos = textarea.selectionStart;
+    var endPos = textarea.selectionEnd;
+    textarea.value = textarea.value.substring(0, startPos) +
+                     smiley +
+                     textarea.value.substring(endPos, textarea.value.length);
+    textarea.selectionStart = startPos + smiley.length;
+    textarea.selectionEnd = startPos + smiley.length;
     textarea.focus();
 }
 
