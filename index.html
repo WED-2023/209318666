@@ -127,7 +127,20 @@
 <br/>
 <br/>
 <button id="likeButton">👍 Like</button>
-<span id="likeCount">0</span>	
+<span id="likeCount">0</span>
+	<script>
+    // Access the button and the span where the count is displayed
+    var button = document.getElementById('likeButton');
+    var countDisplay = document.getElementById('likeCount');
+    var count = 0; // This variable holds the current count
+
+    // Add an event listener to the button for the 'click' event
+    button.addEventListener('click', function() {
+        count++; // Increment the count by one
+        countDisplay.textContent = count; // Display the updated count in the <span>
+    });
+</script>
+
 <br/>
 <br/>
 <br/>
