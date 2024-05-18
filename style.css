@@ -122,11 +122,20 @@ textarea {
     position: relative;  /* Ensure this is positioned */
     z-index: 1;
 }
+.message-form textarea, .message-form select {
+    position: relative; 
+}
+#messageBox {
+    width: calc(100% - 20px); /* Adjust width to prevent overflow */
+    padding-right: 50px; /* Space for the dropdown */
+}
 #smileyDropdown {
     position: absolute;
-    right: 10px;  /* Adjust according to your layout */
-    top: 10px;    /* Adjust to position inside the textarea on the top right */
-    z-index: 2;   /* Higher than textarea */
+    top: 5px; /* Adjust this to match your layout needs */
+    right: 5px;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: white;
 }
 
 
@@ -137,6 +146,9 @@ select {
     background: transparent;
     border: 1px solid white;
     color: white;
+    z-index: 5;
+    display: block;
+    width: auto;
 }
 
 select option {
