@@ -1,4 +1,4 @@
-body {
+body, html{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -162,17 +162,19 @@ textarea:focus, select:focus {
 }
 
 
-.main-container {
-    background-color: white; /* White background for the content area */
-    width: 80%; /* Adjust width as needed, or use max-width for responsiveness */
-    margin: 20px auto; /* Center the container and add margin around it */
-    padding: 20px; /* Padding inside the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
-    overflow: hidden; /* Ensures no internal content can overflow */
+.site-container {
+    background-color: white; /* Sets the background color of the container to white */
+    min-height: 100%; /* Ensures the container extends to at least the full height of the viewport */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds padding inside the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+    display: flex;
+    flex-direction: column; /* Makes the container a flex container to manage the inner layout */
 }
 @media (max-width: 768px) {
-    .main-container {
+    .site-container {
         width: 95%; /* Wider on smaller screens */
         padding: 10px; /* Less padding on smaller screens */
     }
 }
+
