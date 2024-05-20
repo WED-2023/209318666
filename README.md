@@ -1,1 +1,3 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/GmyrjvXu)
+
+The website is designed with user-friendliness in mind, particularly for older adults. It features clear, fixed navigation at the top of the page, uses high-contrast colors for better visibility, and employs a simple, legible font. Interactive elements like a "Like" button make the site engaging, while large text and structured sections improve readability and ease of navigation. Multimedia content, such as photo sliders and videos, enhances engagement, and the site's layout and features cater specifically to the accessibility needs of older users.
